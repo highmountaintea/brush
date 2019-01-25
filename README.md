@@ -8,6 +8,7 @@ CSS library back to basics
 * Intuitive styling of nested structures
 * framework agnostic
 * Small, simple and no dependencies
+* Great for UI library creators
 
 ## Rationale
 
