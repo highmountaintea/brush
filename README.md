@@ -7,6 +7,7 @@ CSS library back to basics
 * Localized styling, no name collision
 * Intuitive styling of nested structures
 * framework agnostic
+* small, simple and no dependencies
 
 ## Rationale
 
