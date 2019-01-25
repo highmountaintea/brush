@@ -1,13 +1,13 @@
 {
   "name": "brushi",
-  "version": "0.2.5",
+  "version": "0.2.8",
   "description": "CSS library so simple it will blow your mind",
   "keywords": [
     "css", "style", "component", "cascading"
   ],
   "main": "index.js",
   "scripts": {
-    "check-es5": "es-check --module es5 ./index.js",
+    "check-es5": "es-check --module es5 ./*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
