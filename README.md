@@ -16,6 +16,7 @@ A well designed web application requires well thought out styling. We organize J
 * cascading CSS not working as well
 * decorates DOM with verbose styles everywhere
 * not handling dynamic user interactions well
+* UI libraries end up with hard coded CSS, or complicated to style
 
 Most CSS libraries do have the following benefits:
 * ability to separate CSS into modules
