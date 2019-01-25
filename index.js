@@ -23,11 +23,11 @@ function selectorsToString(selectors) {
   }
   // assume an object
   var objResult = [];
-  var spacer = selectors.spacer ? ' ' : '';
+  var spacer = selectors.spacer == null ? ' ' : selectors.spacer;
   var prefix = selectors.prefix == null ? '' : '' + selectors.prefix + spacer;
   var postfix = selectors.postfix == null ? '' : '' + spacer + selectors.postfix;
   for (var j = 0; j < selectors.selectors.length; j++) {
-    var val = selectorsToString(selectors.selectors[i]);
+    var val = selectorsToString(selectors.selectors[j]);
     objResult.push(prefix + val + postfix);
   }
   return objResult.join(',');
@@ -35,7 +35,9 @@ function selectorsToString(selectors) {
 
 function brush(selectors, css) {
   if (arguments.length == 0) return generateId();
-  injectCss(selectorsToString(selectors), css);
+  var newSelectors = selectorsToString(selectors);
+  // console.log(newSelectors);
+  injectCss(newSelectors, css);
 }
 
 module.exports = brush;
