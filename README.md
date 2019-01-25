@@ -1,6 +1,6 @@
 # brushi
 
-CSS library so simple it will blow your mind
+CSS library back to basics
 
 ## Features
 * No compilation needed
@@ -26,4 +26,4 @@ Most CSS libraries do have the following benefits:
 
 ## Status
 
-`brushi` is currently under construction. I am personally using it with much success, but would like to firm up the API and usage pattern before releasing it to the public.
+`brushi` is being actively worked on. I am personally using it with much success, but would like to firm up the API and usage pattern before releasing it to the public.
