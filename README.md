@@ -4,14 +4,14 @@ CSS library back to basics
 
 ## Features
 * No compilation needed
-* Localized styling, no name collision
+* Componentized styling, no name collisions
 * Intuitive styling of nested structures
 * framework agnostic
-* small, simple and no dependencies
+* Small, simple and no dependencies
 
 ## Rationale
 
-A well designed web application requires well thought out styling. We organize JS code in components, and we would like to do the same with CSS code. There are various CSS libraries on the landscape, but there are some shortcomings:
+A well designed web application requires well thought out styling. We organize JS code in components, and we would like to do the same with CSS code. There are various CSS libraries on the landscape, but there are various some shortcomings:
 * requires pre-processors
 * not as intuitive as normal CSS
 * cascading CSS not working as well
