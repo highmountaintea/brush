@@ -12,6 +12,7 @@ function addRule(selectors, css) {
   if (this.published == true) throw new Error('sheet is already published, so it cannot be modified'); 
   var rule = utils.composeRule(selectors, css);
   this.rules.push(rule);
+  return this;
 }
 
 function publish() {
@@ -19,11 +20,13 @@ function publish() {
   this.published = true;
   var sheet = this.rules.join('\n');
   utils.injectSheetToHeader(sheet, this.id);
+  return this;
 }
 
 function unpublish() {
   utils.removeSheet(this.id);
   this.published = false;
+  return this;
 }
 
 StyleSheet.prototype.new = utils.generateId;
