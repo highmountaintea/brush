@@ -4,11 +4,17 @@ function generateId() {
   return ('b' + Math.random()).replace('.', '');
 }
 
-function injectSheetToHeader(content) {
+function injectSheetToHeader(content, id) {
   var style = document.createElement('style');
+  if (id != null) style.id = id;
   style.type = 'text/css';
   style.innerHTML = content;
   document.getElementsByTagName('head')[0].appendChild(style);
+}
+
+function removeSheet(id) {
+  var node = document.getElementById(id);
+  node.remove();
 }
 
 function selectorsToString(selectors) {
@@ -41,5 +47,6 @@ function composeRule(selectors, css) {
 
 exports.generateId = generateId;
 exports.injectSheetToHeader = injectSheetToHeader;
+exports.removeSheet = removeSheet;
 exports.selectorsToString = selectorsToString;
 exports.composeRule = composeRule;

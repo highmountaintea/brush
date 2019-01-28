@@ -21,5 +21,6 @@ brush.new = utils.generateId;
 brush.gen = utils.generateId;
 brush.publish = publish;
 brush.newSheet = newSheet;
+brush.removeSheet = utils.removeSheet;
 
 module.exports = brush;
